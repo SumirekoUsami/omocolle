@@ -1,0 +1,38 @@
+body {
+    width: min(100%, 855px);
+    margin: auto;
+}
+
+#picker {
+    display: flex;
+}
+
+.girls, .description {
+    flex: 1;
+}
+
+.girls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.girl {
+    box-sizing: border-box;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: .2s transform ease-in-out;
+}
+
+.girl img {
+    width: 145px;
+}
+
+.girl:hover {
+    transform: scale(1.1);
+}
+
+.description {
+    text-align: center;
+}

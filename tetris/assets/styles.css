@@ -1,0 +1,140 @@
+
+
+#game_ui {
+    display: flex;
+    width: 700px;
+    height: 700px;
+    margin: auto;
+}
+
+#board_wrap {
+    flex: 2;
+}
+
+#status_wrap {
+    width: 205px;
+    padding-left: 20px;
+}
+
+#board_container {
+    position: relative;
+    width: 450px;
+    height: 677px;
+    background-color: #e7faff;
+}
+
+#bladder_mask, #board, #urinometer {
+    position: absolute;
+    width: -webkit-fill-available;
+    width: -moz-fill-available;
+    width: fill-available;
+    height: -webkit-fill-available;
+    height: -moz-fill-available;
+    height: fill-available;
+}
+
+#bladder_mask {
+    z-index: 15;
+    background: url(images/bladder_blue.png);
+    background-size: contain;
+}
+
+#board {
+    z-index: 10;
+    padding: 90px 45px 45px 40px;
+}
+
+#board td, #droplet td {
+    width: 44px;
+    height: 44px;
+    border: 2px solid #b9b9b9;
+    border-radius: 5px;
+}
+
+.block {
+    box-sizing: border-box;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    border: 3px solid #895000;
+    border-radius: 5px;
+    visibility: hidden;
+}
+
+#board td.filled > .block, #droplet td.filled > .block {
+    visibility: visible;
+}
+
+#board td.f1> .block, #droplet td.f1> .block {
+    background-color: #f6c374;
+}
+
+#board td.f2> .block, #droplet td.f2> .block {
+    background-color: #f8cd8c;
+}
+
+#board td.f3> .block, #droplet td.f3> .block {
+    background-color: #f9d8a4;
+}
+
+#board td.f4> .block, #droplet td.f4> .block {
+    background-color: #fbe2bc;
+}
+
+#board td.f5> .block, #droplet td.f5> .block {
+    background-color: #fcecd4;
+}
+
+#board td.f6> .block, #droplet td.f6> .block, #board td.f7> .block, #droplet td.f7> .block {
+    background-color: #fef7ec;
+}
+
+#urinometer {
+    visibility: hidden;
+    z-index: 12;
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 95px 6px 19px 13px;
+    border-image: url(images/urine.webp) 95 6 19 13 fill;
+    opacity: .6;
+    pointer-events: none;
+    height: 0;
+    transition: height .5s ease-in-out;
+    bottom: 0;
+}
+
+#instructions {
+    margin-top: 50px;
+    font-size: 24px;
+}
+
+#droplet {
+    box-sizing: border-box;
+    display: inline-block;
+    background-image: url(images/drop_yellow.png);
+    background-size: cover;
+    height: 253px;
+    width: 140px;
+    padding-top: 128px;
+    padding-left: 12px;
+}
+
+#droplet td {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border-color: hsl(0deg 0% 0% / 10%);
+    background: #fff;
+}
+
+#next_tetramino h1 {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+#girl {
+    margin-top: 20px;
+    height: calc(100% - 292px - 20px);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}

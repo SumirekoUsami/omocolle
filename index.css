@@ -1,0 +1,30 @@
+#YourChar {
+    position: fixed;
+    display: flex;
+    align-items: flex-start;
+    right: 0;
+    top: 0;
+}
+
+#YourChar > img {
+    max-width: 77px;
+}
+
+#YourChar h2, #YourChar p {
+    margin-top: 0;
+}
+
+.games {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game {
+    width: 600px;
+    text-align: center;
+}
+
+.game img {
+    max-width: 90%;
+}

@@ -1,0 +1,8 @@
+spriteFormat: png
+
+thresholds:
+    0: fine
+    30: need
+    50: desperate
+    70: emerg
+    101: wetting

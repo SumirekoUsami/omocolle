@@ -1,0 +1,46 @@
+@font-face {
+    font-family: "Neucha";
+    src: url("fonts/Neucha.eot");
+    src: local("Neucha"),
+        url("fonts/Neucha.eot?#iefix") format("embedded-opentype"),
+        url("fonts/Neucha.woff2") format("woff2"),
+        url("fonts/Neucha.woff") format("woff"),
+        url("fonts/Neucha.ttf") format("truetype"),
+        url("fonts/Neucha.svg#Neucha") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    margin-top: 4vh !important;
+    font-family: "Neucha", sans-serif;
+    user-select: none;
+    overflow-x: hidden;
+}
+
+a:visited {
+    color: #0000d0;
+}
+
+.border {
+    border-style: solid;
+    border-width: 19px 23px 14px 21px;
+    border-image: url(images/border.png) 19 23 14 21 fill stretch stretch;
+}
+
+.key {
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: unset;
+    height: 37px;
+    width: 42px;
+    font-size: 18px;
+    background-image: url(images/key.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 16px;
+    padding-top: 2px;
+    user-select: none;
+    font-weight: 900;
+}

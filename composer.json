@@ -1,0 +1,17 @@
+{
+    "name": "ciatrice/omo-collection",
+    "type": "project",
+    "require": {
+        "nette/neon": "^3.3"
+    },
+    "license": "BSD-4-Clause",
+    "authors": [
+        {
+            "name": "Ciatrice",
+            "email": "sadnessslut@gmail.com"
+        },
+        {
+            "name": "Yumichka.3"
+        }
+    ]
+}

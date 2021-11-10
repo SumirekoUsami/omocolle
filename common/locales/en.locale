@@ -1,0 +1,12 @@
+product_name = "OmoCollection"
+product_description = "Collection of open-source omorashi games. Pick a game to start :3"
+select_char = "Select Character"
+select_char_hint = "To start playing, please select a character first. This box will be used to show info about each one as you hover over 'em."
+char_author = "Made by"
+
+select_game = "Game selection"
+selected_char = "This is your currently selected character."
+change_char = "Pick another?"
+no_char_name = "???"
+no_char_selected = "You didn't select the default character..."
+pick_char = "Pick one now?"

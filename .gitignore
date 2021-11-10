@@ -1,0 +1,4 @@
+vendor
+tetris/node_modules
+tetris/assets/sounds/*
+!tetris/assets/sounds/README.textile
