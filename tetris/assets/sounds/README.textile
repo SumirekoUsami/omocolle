@@ -1,0 +1,16 @@
+h1. Sounds
+
+Sounds are not bundled with the FLOSS edition of OmoCollection. Sound resources available on bernkastel.ru are proprietary and can't be redistributed :(
+
+h2. Sound resources list
+
+|_. ID | _. File name |_. Description |
+| super | ahaha.mp3 | Played on removal of 4+ rows |
+| rowrem | nipah.mp3 | Played on removal of at least one row |
+| cheat | ahaha.mp3 | Played on cheat usage (not used) |
+| freeze | dropped.wav | Played upon landing of tetramino |
+| gameover | game_over.wav | Played on game over |
+| fill | gauge_state_changed.wav | (not used) |
+| move | move.wav | Played on moving and rotation |
+| pause | pause.mp3 | Played on pause |
+| gauge | gauge_state_changed.wav | Played on rapid growth of tetris board height (20%+) |

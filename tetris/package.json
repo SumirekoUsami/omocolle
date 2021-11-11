@@ -1,0 +1,13 @@
+{
+  "name": "@omocolle/tetris",
+  "version": "0.0.0",
+  "main": "index.php",
+  "repository": "https://github.com/SumirekoUsami/omocolle",
+  "author": "Ciato and Yumichka.3",
+  "license": "BSD-4-Clause",
+  "private": true,
+  "dependencies": {
+    "preloadjs": "^1.0.1",
+    "soundjs": "^1.0.1"
+  }
+}
