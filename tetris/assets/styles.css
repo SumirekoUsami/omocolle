@@ -25,12 +25,10 @@
 
 #bladder_mask, #board, #urinometer {
     position: absolute;
-    width: -webkit-fill-available;
-    width: -moz-fill-available;
-    width: fill-available;
-    height: -webkit-fill-available;
-    height: -moz-fill-available;
-    height: fill-available;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 #bladder_mask {
@@ -44,7 +42,20 @@
     padding: 90px 45px 45px 40px;
 }
 
-#board td, #droplet td {
+.tetris {
+    display: flex;
+    flex-direction: column;
+}
+
+.tetrisRow {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2px;
+}
+
+.tetrisCell {
+    position: relative;
+    box-sizing: border-box;
     width: 44px;
     height: 44px;
     border: 2px solid #b9b9b9;
@@ -52,40 +63,44 @@
 }
 
 .block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-51%, -52%);
     box-sizing: border-box;
-    width: 80%;
-    height: 80%;
-    margin: auto;
+    width: 76%;
+    height: 76%;
     border: 3px solid #895000;
     border-radius: 5px;
     visibility: hidden;
 }
 
-#board td.filled > .block, #droplet td.filled > .block {
+.tetrisCell.filled > .block {
     visibility: visible;
 }
 
-#board td.f1> .block, #droplet td.f1> .block {
+.tetrisCell.f1 > .block {
     background-color: #f6c374;
 }
 
-#board td.f2> .block, #droplet td.f2> .block {
+.tetrisCell.f2 > .block {
     background-color: #f8cd8c;
 }
 
-#board td.f3> .block, #droplet td.f3> .block {
+.tetrisCell.f3 > .block {
     background-color: #f9d8a4;
 }
 
-#board td.f4> .block, #droplet td.f4> .block {
+.tetrisCell.f4 > .block {
     background-color: #fbe2bc;
 }
 
-#board td.f5> .block, #droplet td.f5> .block {
+.tetrisCell.f5 > .block {
     background-color: #fcecd4;
 }
 
-#board td.f6> .block, #droplet td.f6> .block, #board td.f7> .block, #droplet td.f7> .block {
+.tetrisCell.f6 > .block, .tetrisCell.f7 > .block {
     background-color: #fef7ec;
 }
 
@@ -100,7 +115,7 @@
     pointer-events: none;
     height: 0;
     transition: height .5s ease-in-out;
-    bottom: 0;
+    top: unset;
 }
 
 #instructions {
@@ -116,13 +131,13 @@
     height: 253px;
     width: 140px;
     padding-top: 128px;
-    padding-left: 12px;
+    padding-left: 11px;
+    padding-right: 10px;
 }
 
-#droplet td {
-    display: inline-block;
-    width: 22px;
-    height: 22px;
+#droplet .tetrisCell {
+    width: 28px;
+    height: 28px;
     border-color: hsl(0deg 0% 0% / 10%);
     background: #fff;
 }

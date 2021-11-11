@@ -20,15 +20,15 @@
                 <div id="board_container">
                     <div id="bladder_mask"></div>
                     <div id="board">
-                        <table id="board__table">
+                        <div id="board__table" class="tetris">
                             <?php for($i = 0; $i < 12; $i++): ?>
-                                <tr>
+                                <div class="tetrisRow">
                                     <?php for($j = 0; $j < 8; $j++): ?>
-                                        <td><div class="block"></div></td>
+                                        <div class="tetrisCell"><div class="block"></div></div>
                                     <?php endfor; ?>
-                                </tr>
+                                </div>
                             <?php endfor; ?>
-                        </table>
+                        </div>
                     </div>
                     <div id="urinometer"></div>
                 </div>
@@ -36,23 +36,24 @@
                 <div id="instructions">
                     <div class="key">A</div>, <div class="key">D</div> &mdash; <?= tr("move") ?><br/>
                     <div class="key">W</div> &mdash; <?= tr("rotate") ?><br/>
-                    <div class="key">S</div> &mdash; <?= tr("drop") ?>
+                    <div class="key">S</div> &mdash; <?= tr("drop") ?><br/>
+                    <?= tr("copyright") ?>
                 </div>
             </div>
             
             <div id="status_wrap">
                 <div id="next_tetramino">
                     <h1><?= tr("next") ?></h1>
-                    <div id="droplet">
-                        <table id="droplet__table">
+                    <div id="droplet" class="tetris">
+                        <div id="droplet__table">
                             <?php for($i = 0; $i < 3; $i++): ?>
-                                <tr>
+                                <div class="tetrisRow">
                                     <?php for($j = 0; $j < 4; $j++): ?>
-                                        <td><div class="block"></div></td>
+                                        <div class="tetrisCell"><div class="block"></div></div>
                                     <?php endfor; ?>
-                                </tr>
+                                </div>
                             <?php endfor; ?>
-                        </table>
+                        </div>
                     </div>
                 </div>
                 

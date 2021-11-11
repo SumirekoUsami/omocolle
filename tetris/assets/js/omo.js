@@ -2,10 +2,10 @@ const spritePrefix = "../common/girls/" + girlName + "/tetris/";
 
 function drawMatrix(matrix, table, offset = 0) {
     for(let i = offset; i < matrix.length; i++) {
-        let row = table.querySelector("tr:nth-of-type(" + (i - offset + 1) + ")");
+        let row = table.querySelector(".tetrisRow:nth-of-type(" + (i - offset + 1) + ")");
         for(let j = 0; j < matrix[0].length; j++) {
-            let cell = row.querySelector("td:nth-of-type(" + (j + 1) + ")");
-            cell.className = "";
+            let cell = row.querySelector(".tetrisCell:nth-of-type(" + (j + 1) + ")");
+            cell.className = "tetrisCell";
             
             if(matrix[i][j] !== 0) {
                 cell.classList.add("f" + matrix[i][j]);
@@ -42,6 +42,12 @@ function updateGauge(fullness) {
     }
     
     pervFullness = fullness;
+}
+
+function onBodyResize() {
+    let scale = Math.min(1, document.body.clientWidth / 750);
+    document.body.style.transform      = "scale3d(" + [scale, scale, scale].join(",") + ")";
+    document.body.style["margin-left"] = (scale * 150) + "px";
 }
 
 function onGameBoardUpdate(event) {
