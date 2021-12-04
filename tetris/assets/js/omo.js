@@ -71,8 +71,10 @@ function onRowRemovalComplete(event) {
 
 function onGameOver() {
     playSound("gameover");
-    if(confirm("Вы проиграли, ми! Хотите ещё раз?"))
-        window.location.reload();
+    window.setTimeout(() => {
+        if(confirm("Вы проиграли, ми! Хотите ещё раз?"))
+            window.location.reload();
+    }, 1000);
 }
 
 function onPause() {
