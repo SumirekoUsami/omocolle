@@ -22,7 +22,7 @@ if(isset($_COOKIE["girl"])) {
         $g    = $girls[$_COOKIE["girl"]];
         
         $girl->id          = $g->id;
-        $girl->name        = $g->name[__GetUserLanguage()] ?? $g->names["_"];
+        $girl->name        = $g->name[__GetUserLanguage()] ?? $g->name["_"];
         $girl->description = $g->description[__GetUserLanguage()] ?? $g->description["_"];
         $girl->config      = (object) $g->games[$GAME];
     }
