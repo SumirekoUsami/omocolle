@@ -1,0 +1,8 @@
+spriteFormat: webp
+
+thresholds:
+    0: le
+    30: 2
+    50: 3
+    70: 4
+    101: 5
