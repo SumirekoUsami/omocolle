@@ -5,6 +5,7 @@ body {
 
 #picker {
     display: flex;
+    align-items: self-start;
 }
 
 .girls, .description {
